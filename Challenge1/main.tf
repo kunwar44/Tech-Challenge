@@ -283,7 +283,7 @@ resource "aws_db_instance" "default" {
   allocated_storage      = 10
   db_subnet_group_name   = aws_db_subnet_group.default.id
   engine                 = "mysql"
-  engine_version         = "8.0.20"
+  engine_version         = "8.0.20" 
   instance_class         = "db.t2.micro"
   multi_az               = true
   name                   = "mydb"
@@ -307,4 +307,13 @@ resource "aws_db_subnet_group" "default" {
 output "lb_dns_name" {
   description = "The DNS name of the load balancer"
   value       = aws_lb.external-elb.dns_name
+}
+
+# To remotly store the terraform state file in the S3 bucket. Please enable versioning on the S3 bucket. 
+terraform {
+  backend "s3" {
+    bucket = "mybucket" #Create a new bucket 
+    key    = "path/to/my/key" #URI path of the S3 bucket
+    region = "us-east-1"
+  }
 }
