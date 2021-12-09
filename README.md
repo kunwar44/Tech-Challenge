@@ -7,6 +7,7 @@ A 3-tier environment is a common setup. Use a tool of your choosing/familiarity 
 
 For 3-tier environment/architecture we are using Terraform which is Infrastructure as Code (IaC) 
 IaC allows us to provision and configure our environments in a reliable and safe way.
+
 This repository contains code for a 3 tier architecture. It uses terraform to create Infra over AWS cloud and deploys a basic apache server.
 The repo has two file main.tf and apache.sh to install a apache server on the instances and create a unique landing page for each so that we can verify the ALB is working.
 
