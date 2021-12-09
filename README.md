@@ -9,7 +9,7 @@ For 3-tier environment/architecture we are using Terraform which is Infrastructu
 IaC allows us to provision and configure our environments in a reliable and safe way.
 
 This repository contains code for a 3 tier architecture. It uses terraform to create Infra over AWS cloud and deploys a basic apache server.
-The repo has two file main.tf and apache.sh to install a apache server on the instances and create a unique landing page for each so that we can verify the ALB is working.
+The repo has two file main.tf and install_apache.sh to install apache server on the instances and create a unique landing page for each so that we can verify the ALB is working.
 
 **3-tier Architecture Diagram**
 ![](3-Tier_Architecture.png)
