@@ -27,6 +27,7 @@ The code allows for a particular data key to be retrieved individually
 The Shell Script will query the meta data of an linux instance within AWS and provide a JSON formatted output.
 
 Output:
+
 ![](shell_script_output.jpg)
 
 
