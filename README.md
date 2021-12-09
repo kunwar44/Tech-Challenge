@@ -15,6 +15,21 @@ The repo has two file main.tf and apache.sh to install a apache server on the in
 ![](3-Tier_Architecture.png)
 
 
+**Challenge #2**
+
+We need to write code that will query the meta data of an instance within AWS and provide a json formatted output. The choice of language and implementation is up to you.
+Bonus Points
+The code allows for a particular data key to be retrieved individually
+
+
+**Solution**
+
+The Shell Script will query the meta data of an linux instance within AWS and provide a JSON formatted output.
+
+Output:
+![](Tech-Challenge/Challenge2/shell_script_output.jpg)
+
+
 
 
 
