@@ -26,7 +26,7 @@ The code allows for a particular data key to be retrieved individually
 
 The Shell Script will query the meta data of an linux instance within AWS and provide a JSON formatted output.
 
-Note:- Give the required executable permission to the shell script before executing. 
+Note:- Give the required executable permission to the shell script metadata.sh before executing. 
 
 Output:
 
